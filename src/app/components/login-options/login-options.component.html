@@ -1,0 +1,24 @@
+<div class="col">
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-primary btn-block google" (click)="signInwithModeandProvider(modes.POPUP, providers.GOOGLE)"><i class="fab fa-google"></i> Google Login with Popup</button>
+      <button class="btn btn-primary btn-block facebook"(click)="signInwithModeandProvider(modes.POPUP, providers.FACEBOOK)" ><i class="fab fa-facebook-f"></i> Facebook Login with Popup</button>
+      <!--<button class="btn btn-primary btn-block twitter"><i class="fab fa-twitter"></i> Twitter Login with Popup</button>
+      <button class="btn btn-primary btn-block github"><i class="fab fa-github"></i> Github Login with Popup</button>-->
+    </div>
+    <div class="col">
+      <button class="btn btn-primary btn-block google" (click)="signInwithModeandProvider(modes.REDIRECT, providers.GOOGLE)"><i class="fab fa-google"></i> Google Login with Redirect</button>
+      <button class="btn btn-primary btn-block facebook"(click)="signInwithModeandProvider(modes.REDIRECT, providers.FACEBOOK)"><i class="fab fa-facebook-f"></i> Facebook Login with Redirect</button>
+     <!-- <button class="btn btn-primary btn-block twitter"><i class="fab fa-twitter"></i> Twitter Login with Redirect</button>
+      <button class="btn btn-primary btn-block github"><i class="fab fa-github"></i> Github Login with Redirect</button>-->
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <button class="btn btn-primary btn-block email"(click)="toggleSigninMode()">
+      <i class="fas fa-envelope-square"></i> {{ authservice.signInMode ?'Sign Up':'Sign In'}} with Email/Password</button>
+    <button class="btn btn-primary btn-block phone" (click)="togglePhoneSignIn()"><i class="fas fa-phone"></i> Login with Phone</button>
+    <button class="btn btn-primary btn-block anonymous " (click)="signInAnonymously()"><i class="fas fa-user"></i> Login with Anonymous</button>
+
+  </div>
+</div>

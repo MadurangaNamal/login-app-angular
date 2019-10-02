@@ -14,6 +14,14 @@ export const environment = {
     appId: '1:565547572917:web:08a564a00ead26b7'
 
 
+  },
+  modes: {
+      POPUP: 'popup',
+      REDIRECT: 'redirect'
+  },
+  providers: {
+      GOOGLE: 'google',
+      FACEBOOK: 'facebook'
   }
 
 };
